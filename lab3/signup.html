@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign up</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('../images/momoBook\ logo.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            margin: 5px 0 20px;
+            font-size: 14px;
+            color: white;
+        }
+        .input-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: black;
+            border: 1px solid grey;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+        }
+        input::placeholder {
+            color: #888;
+        }
+        .login-button {
+            width: 110%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: white;
+            color: black;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: white;
+        }
+        .fa-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .fa {
+            font-size: 18px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
+            color: white;
+        }
+        .radio-wrapper {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .radio-wrapper input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: black; 
+      cursor: pointer;
+      margin-left: 20px;
+    }
+
+    .radio-wrapper i {
+      font-size: 20px;
+      color: lightblue;
+    }
+
+    .radio-wrapper:hover i {
+      color: white;
+    }
+        .fa-facebook { background: #3B5998; }
+        .fa-twitter { background: #1DA1F2; }
+        .fa-youtube { background: #FF0000; }
+        .fa:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign up</h1>
+        <form>
+            <div class="input-group">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Confirm Password">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Phone Number">
+            </div>
+
+            <div class="radio-wrapper">
+                <label class="radio-wrapper">
+                  <input type="radio" name="gender" value="male">
+                  <i class="fa fa-mars"></i>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="gender" value="female">
+                  <i class="fa fa-venus"></i>
+                </label>
+                <label class="radio-wrapper">
+                    <input type="radio" name="gender" value="genderless">
+                    <i class="fa fa-genderless"></i>
+                </label>
+            </div>
+              
+            <button type="button" class="login-button" onclick="window.location.href='login.html';">Sign up</button>
+
+        </form>
+        <p>Already have an account? <a href="login.html">Log in</a></p>
+        <div class="fa-container">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://twitter.com" class="fa fa-twitter"></a>
+            <a href="https://youtube.com" class="fa fa-youtube"></a>
+        </div>
+    </div>
+</body>
+</html>
